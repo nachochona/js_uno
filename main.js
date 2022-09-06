@@ -3,7 +3,7 @@ const dolar_oficial = 147;
 alert("Buenos días éste es un cotizador, conteste correctamente cada pregunta y obtendrá un costo aproximado de su viaje.");
 
 let nombrePersona = prompt ("Antes que nada nos gustagía saber su nombre.");
-alert("Hola " + nombrePersona + "será un placer ayudarte.");
+alert("Hola " + nombrePersona + " será un placer ayudarte.");
 
 let destino = prompt("La primera pregunta es la siguiente: ¿A qué continente desea viajar?");
 
@@ -125,7 +125,8 @@ console.log(valorFinal);
 
 
 alert("Muy bien " + nombrePersona + ", analizados los datos ingresados podemos darle el aproximado de su viaje deseado");
-alert("El total es de " + valorFinal + " pesos o " + (destino / dolar_oficial).toFixed(2) + " dólares" );
+alert("El total es de " + valorFinal + " pesos o " + (valorFinal / dolar_oficial).toFixed(2) + " dólares" );
+
 
 
 
