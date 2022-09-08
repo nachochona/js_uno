@@ -118,14 +118,21 @@ else if (hotel > 3 && hotel <= 5){
 }
 console.log(hotel);
 
+
 alert("Hemos cotizado su hospedaje en: " + hotel * tiempo +" pesos - " + ((hotel * tiempo)/ dolar_oficial).toFixed(2) + " dólares");
 
-let valorFinal = destino + (hotel * tiempo);
-console.log(valorFinal);
+// let valorFinal = destino + (hotel * tiempo);
+// console.log(valorFinal);
+
+function total(valorA, valorB, valorC) {
+    let resultado = valorA + (valorB * valorC);
+    return resultado;
+}
+let resultadoTotal = total(destino, hotel, tiempo);
 
 
 alert("Muy bien " + nombrePersona + ", analizados los datos ingresados podemos darle el aproximado de su viaje deseado");
-alert("El total es de " + valorFinal + " pesos o " + (valorFinal / dolar_oficial).toFixed(2) + " dólares" );
+alert("El total es de " + resultadoTotal + " pesos o " + (resultadoTotal / dolar_oficial).toFixed(2) + " dólares" );
 
 
 
